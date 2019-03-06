@@ -15,8 +15,5 @@ RUN dotnet publish --configuration Release
 # Expose HTTP port
 EXPOSE 5000
 
-FROM microsoft/dotnet:aspnetcore-runtime
-WORKDIR /app
-
 # Run server
-ENTRYPOINT ["dotnet", "run", "--configuration", "Release", "--project", "App"]
+ENTRYPOINT ["dotnet", "./App/bin/Release/netcoreapp2.2/App.dll"]
