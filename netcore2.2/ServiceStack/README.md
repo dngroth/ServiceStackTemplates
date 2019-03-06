@@ -2,11 +2,20 @@
 
 ServiceStack ASP.NET Core Empty Web project on .NET Framework
 
+## Running
+
 [![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/web.png)](http://web.web-templates.io/)
 
-> Browse [source code](https://github.com/NetFrameworkCoreTemplates/web-corefx), view live demo [web.web-templates.io](http://web.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
+Using docker:
 
-    $ npm install -g @servicestack/cli
+```sh
+docker build --tag servicestack . && docker run -p 5000:5000 servicestack
+```
 
-    $ dotnet-new web-corefx ProjectName
+Using dotnet:
 
+```sh
+dotnet run --configuration Release --project App
+```
+
+The website will be hosted at <http://localhost:5000>
