@@ -1,6 +1,4 @@
-﻿using System;
-using ServiceStack;
-using ServiceStack.ServiceModel;
+﻿using ServiceStack.ServiceModel;
 
 namespace ServiceStack.ServiceInterface
 {
