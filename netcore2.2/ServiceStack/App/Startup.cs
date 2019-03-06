@@ -1,13 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Funq;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using Funq;
-using ServiceStack;
-using ServiceStack.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using ServiceStack.ServiceInterface;
 
-namespace ServiceStack
+namespace ServiceStack.App
 {
     public class Startup
     {
