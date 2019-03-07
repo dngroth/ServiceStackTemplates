@@ -4,11 +4,11 @@
     [Route("/hello/{Name}")]
     public class Hello : IReturn<HelloResponse>
     {
-        public string Name { get; set; }
-    }
+        public Hello(string name)
+        {
+            Name = name;
+        }
 
-    public class HelloResponse
-    {
-        public string Result { get; set; }
+        public string Name { get; }
     }
 }

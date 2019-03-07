@@ -35,8 +35,7 @@ namespace ServiceStack.Tests
         public void Can_call_Hello_Service()
         {
             var client = CreateClient();
-
-            var response = client.Get(new Hello { Name = "World" });
+            var response = client.Get(new Hello("World"));
 
             Assert.That(response.Result, Is.EqualTo("Hello, World!"));
         }
