@@ -23,7 +23,7 @@ namespace ServiceStack.Tests
         {
             var service = _appHost.Container.Resolve<MyServices>();
 
-            var response = (HelloResponse)service.Any(new Hello { Name = "World" });
+            var response = (HelloResponse)service.Any(new Hello("World"));
 
             Assert.That(response.Result, Is.EqualTo("Hello, World!"));
         }
