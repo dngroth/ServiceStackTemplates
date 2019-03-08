@@ -1,15 +1,14 @@
-﻿using Funq;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ServiceStack.ServiceInterface;
 
 namespace ServiceStack.App
 {
     public class Startup
     {
         public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration) => Configuration = configuration;
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -29,21 +28,6 @@ namespace ServiceStack.App
             app.UseServiceStack(new AppHost
             {
                 AppSettings = new NetCoreAppSettings(Configuration)
-            });
-        }
-    }
-
-    public class AppHost : AppHostBase
-    {
-        public AppHost() : base("ServiceStack", typeof(MyServices).Assembly) { }
-
-        // Configure your AppHost with the necessary configuration and dependencies your App needs
-        public override void Configure(Container container)
-        {
-            SetConfig(new HostConfig
-            {
-                DefaultRedirectPath = "/metadata",
-                DebugMode = AppSettings.Get(nameof(HostConfig.DebugMode), false)
             });
         }
     }

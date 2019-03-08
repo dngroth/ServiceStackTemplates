@@ -1,6 +1,4 @@
-﻿using Funq;
-using NUnit.Framework;
-using ServiceStack.ServiceInterface;
+﻿using NUnit.Framework;
 using ServiceStack.ServiceModel;
 
 namespace ServiceStack.Tests
@@ -9,15 +7,6 @@ namespace ServiceStack.Tests
     {
         private const string BaseUri = "http://localhost:2000/";
         private readonly ServiceStackHost _appHost;
-
-        class AppHost : AppSelfHostBase
-        {
-            public AppHost() : base(nameof(IntegrationTest), typeof(MyServices).Assembly) { }
-
-            public override void Configure(Container container)
-            {
-            }
-        }
 
         public IntegrationTest()
         {
