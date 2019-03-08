@@ -12,7 +12,7 @@ namespace ServiceStack.Tests
         public UnitTest()
         {
             _appHost = new BasicAppHost().Init();
-            _appHost.Container.AddTransient<MyServices>();
+            _appHost.Container.AddTransient<HelloServices>();
         }
 
         [OneTimeTearDown]
@@ -21,7 +21,7 @@ namespace ServiceStack.Tests
         [Test]
         public void Can_call_MyServices()
         {
-            var service = _appHost.Container.Resolve<MyServices>();
+            var service = _appHost.Container.Resolve<HelloServices>();
             var response = (HelloResponse)service.Any(new Hello("World"));
 
             Assert.That(response.Result, Is.EqualTo("Hello, World!"));

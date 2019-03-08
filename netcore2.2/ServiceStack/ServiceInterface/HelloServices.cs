@@ -2,7 +2,7 @@
 
 namespace ServiceStack.ServiceInterface
 {
-    public class MyServices : Service
+    public class HelloServices : Service
     {
         public object Any(Hello request)
         {

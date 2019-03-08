@@ -5,7 +5,7 @@ namespace ServiceStack.App
 {
     public class AppHost : AppHostBase
     {
-        public AppHost() : base("ServiceStack", typeof(MyServices).Assembly) { }
+        public AppHost() : base("ServiceStack", typeof(HelloServices).Assembly) { }
 
         // Configure your AppHost with the necessary configuration and dependencies your App needs
         public override void Configure(Container container)
