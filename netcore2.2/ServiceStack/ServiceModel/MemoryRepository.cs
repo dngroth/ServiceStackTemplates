@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace ServiceStack.ServiceModel.Types
+namespace ServiceStack.ServiceModel
 {
     public class MemoryRepository<T> : IRepository<T>
     {

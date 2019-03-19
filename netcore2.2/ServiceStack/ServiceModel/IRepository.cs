@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ServiceStack.ServiceModel.Types
+namespace ServiceStack.ServiceModel
 {
     public interface IRepository<T>
     {

@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
-using ServiceStack.ServiceModel.Types.Message;
-using ServiceStack.ServiceModel.Types.Message.Request;
+using ServiceStack.ServiceModel.Message;
+using ServiceStack.ServiceModel.Message.Request;
 
 namespace ServiceStack.Tests
 {

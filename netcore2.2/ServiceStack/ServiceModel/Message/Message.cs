@@ -1,4 +1,4 @@
-﻿namespace ServiceStack.ServiceModel.Types.Message
+﻿namespace ServiceStack.ServiceModel.Message
 {
     public class Message
     {

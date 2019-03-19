@@ -1,4 +1,4 @@
-﻿namespace ServiceStack.ServiceModel.Types.Message.Request
+﻿namespace ServiceStack.ServiceModel.Message.Request
 {
     [Route("/messages/{Id}", "GET")]
     public class Get : IReturn<Message>
