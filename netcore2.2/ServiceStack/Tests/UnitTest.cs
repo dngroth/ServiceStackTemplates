@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using ServiceStack.ServiceInterface;
-using ServiceStack.ServiceModel;
+using ServiceStack.ServiceModel.Types.Message;
+using ServiceStack.ServiceModel.Types.Message.Request;
 using ServiceStack.Testing;
 
 namespace ServiceStack.Tests
@@ -12,19 +13,19 @@ namespace ServiceStack.Tests
         public UnitTest()
         {
             _appHost = new BasicAppHost().Init();
-            _appHost.Container.AddTransient<HelloServices>();
+            _appHost.Container.AddTransient<MessageService>();
         }
 
         [OneTimeTearDown]
         public void OneTimeTearDown() => _appHost.Dispose();
 
         [Test]
-        public void Can_call_MyServices()
+        public void ReturnsMessageOnGetRequest()
         {
-            var service = _appHost.Container.Resolve<HelloServices>();
-            var response = (HelloResponse)service.Any(new Hello("World"));
+            var service = _appHost.Container.Resolve<MessageService>();
+            var message = service.Get(new Get { Id = 1 });
 
-            Assert.That(response.Result, Is.EqualTo("Hello, World!"));
+            Assert.Equals(message, new Message(1, ""));
         }
     }
 }

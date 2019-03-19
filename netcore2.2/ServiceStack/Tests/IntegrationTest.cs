@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
-using ServiceStack.ServiceModel;
+using ServiceStack.ServiceModel.Types.Message;
+using ServiceStack.ServiceModel.Types.Message.Request;
 
 namespace ServiceStack.Tests
 {
@@ -21,12 +22,12 @@ namespace ServiceStack.Tests
         public IServiceClient CreateClient() => new JsonServiceClient(BaseUri);
 
         [Test]
-        public void Can_call_Hello_Service()
+        public void ReturnsMessageOnGetRequest()
         {
             var client = CreateClient();
-            var response = client.Get(new Hello("World"));
+            var message = client.Get(new Get { Id = 1 });
 
-            Assert.That(response.Result, Is.EqualTo("Hello, World!"));
+            Assert.Equals(message, new Message(1, ""));
         }
     }
 }
