@@ -1,7 +1,7 @@
-﻿namespace ServiceStack.ServiceModel.Message.Request
+﻿namespace ServiceStack.ServiceInterface.Message.Request
 {
     [Route("/messages/{Id}", "PUT")]
-    public class Update : IReturn<Message>
+    public class UpdateMessage : IReturn<ServiceModel.Message.Message>
     {
         public int Id { get; set; }
 
