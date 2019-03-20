@@ -1,5 +1,6 @@
 ﻿using Funq;
 using ServiceStack.ServiceInterface;
+using ServiceStack.ServiceInterface.Message;
 
 namespace ServiceStack.Tests
 {
