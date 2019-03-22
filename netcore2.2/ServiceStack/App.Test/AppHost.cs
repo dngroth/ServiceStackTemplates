@@ -1,12 +1,12 @@
 ﻿using Funq;
-using ServiceStack.ServiceInterface;
+using ServiceStack;
 using ServiceStack.ServiceInterface.Message;
 
-namespace ServiceStack.Tests
+namespace App.Test
 {
     internal class AppHost : AppSelfHostBase
     {
-        public AppHost() : base(nameof(IntegrationTest), typeof(MessageService).Assembly) { }
+        public AppHost() : base(nameof(IntegrationTests), typeof(MessageService).Assembly) { }
 
         public override void Configure(Container container)
         {

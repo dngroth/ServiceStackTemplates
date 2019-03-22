@@ -7,9 +7,9 @@ namespace ServiceStack.ServiceModel
     {
         private readonly Dictionary<int, T> _data;
 
-        public MemoryRepository(Dictionary<int, T> data)
+        public MemoryRepository()
         {
-            _data = data;
+            _data = new Dictionary<int, T>();
         }
 
         public IReadOnlyList<T> GetAll() => _data.Values.ToList().AsReadOnly();
