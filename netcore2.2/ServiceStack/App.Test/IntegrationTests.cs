@@ -1,5 +1,7 @@
 using ServiceStack;
+using ServiceStack.ServiceInterface.Message;
 using ServiceStack.ServiceInterface.Message.Request;
+using ServiceStack.ServiceModel;
 using ServiceStack.ServiceModel.Message;
 using Xunit;
 
@@ -15,6 +17,10 @@ namespace App.Test
             _appHost = new AppHost()
                 .Init()
                 .Start(BaseUri);
+
+            // Todo: register data model instead of memory dummy
+            _appHost.Container.RegisterAs<MemoryRepository<Message>, IRepository<Message>>();
+            _appHost.Container.AddTransient<MessageService>();
         }
 
         public IServiceClient CreateClient() => new JsonServiceClient(BaseUri);
