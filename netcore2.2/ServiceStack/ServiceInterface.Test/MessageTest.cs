@@ -6,7 +6,7 @@ using ServiceStack.ServiceModel.Message;
 using ServiceStack.Testing;
 using Xunit;
 
-namespace Interface.Test
+namespace ServiceInterface.Test
 {
     public class MessageTest
     {
@@ -15,7 +15,7 @@ namespace Interface.Test
         public MessageTest()
         {
             _appHost = new BasicAppHost().Init();
-            _appHost.Container.RegisterAs<MemoryRepository<Message>,IRepository<Message>>();
+            _appHost.Container.RegisterAs<MemoryRepository<Message>, IRepository<Message>>();
             _appHost.Container.AddTransient<MessageService>();
         }
 
