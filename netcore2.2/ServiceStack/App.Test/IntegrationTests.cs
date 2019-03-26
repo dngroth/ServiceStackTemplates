@@ -29,9 +29,9 @@ namespace App.Test
         public void ReturnsMessageOnGetRequest()
         {
             var client = CreateClient();
-            var message = client.Get(new GetMessage { Id = 1 });
+            var messages = client.Get(new GetMessages());
 
-            Assert.Equal(new Message(1, ""), message);
+            Assert.Equal(new Message[0], messages);
         }
     }
 }

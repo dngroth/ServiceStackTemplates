@@ -23,9 +23,10 @@ namespace Interface.Test
         public void ReturnsMessageOnGetRequest()
         {
             var service = _appHost.Container.Resolve<MessageService>();
-            var message = service.Get(new GetMessages());
 
-            Assert.Equal(message, new Message(1, ""));
+            var messages = service.Get(new GetMessages());
+
+            Assert.Equal(new Message[0], messages);
         }
     }
 }
