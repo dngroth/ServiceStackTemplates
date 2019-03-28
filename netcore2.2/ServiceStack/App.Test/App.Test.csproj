@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <RootNamespace>ServiceStack.App.Test</RootNamespace>
+
+    <AssemblyName>ServiceStack.App.Test</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceInterface\ServiceInterface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ServiceStack">
+      <HintPath>..\..\..\..\..\..\Users\domin\.nuget\packages\servicestack.core\5.4.1\lib\netstandard2.0\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Client">
+      <HintPath>..\..\..\..\..\..\Users\domin\.nuget\packages\servicestack.client.core\5.4.1\lib\netstandard2.0\ServiceStack.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\..\..\..\..\..\Users\domin\.nuget\packages\servicestack.interfaces.core\5.4.1\lib\netstandard2.0\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Kestrel">
+      <HintPath>..\..\..\..\..\..\Users\domin\.nuget\packages\servicestack.kestrel.core\5.4.1\lib\netstandard2.0\ServiceStack.Kestrel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
