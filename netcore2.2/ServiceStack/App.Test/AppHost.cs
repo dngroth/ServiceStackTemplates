@@ -1,8 +1,7 @@
 ﻿using Funq;
-using ServiceStack;
 using ServiceStack.ServiceInterface.Message;
 
-namespace App.Test
+namespace ServiceStack.App.Test
 {
     internal class AppHost : AppSelfHostBase
     {

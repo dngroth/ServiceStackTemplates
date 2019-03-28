@@ -1,12 +1,10 @@
-using ServiceStack;
 using ServiceStack.ServiceInterface.Message;
 using ServiceStack.ServiceInterface.Message.Request;
 using ServiceStack.ServiceModel;
-using ServiceStack.ServiceModel.Message;
 using ServiceStack.Testing;
 using Xunit;
 
-namespace ServiceInterface.Test
+namespace ServiceStack.ServiceInterface.Test
 {
     public class MessageTest
     {
@@ -15,7 +13,7 @@ namespace ServiceInterface.Test
         public MessageTest()
         {
             _appHost = new BasicAppHost().Init();
-            _appHost.Container.RegisterAs<MemoryRepository<Message>, IRepository<Message>>();
+            _appHost.Container.RegisterAs<MemoryRepository<ServiceModel.Message.Message>, IRepository<ServiceModel.Message.Message>>();
             _appHost.Container.AddTransient<MessageService>();
         }
 
@@ -26,7 +24,7 @@ namespace ServiceInterface.Test
 
             var messages = service.Get(new GetMessages());
 
-            Assert.Equal(new Message[0], messages);
+            Assert.Equal(new ServiceModel.Message.Message[0], messages);
         }
     }
 }

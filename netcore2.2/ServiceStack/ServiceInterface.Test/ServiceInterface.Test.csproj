@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <RootNamespace>ServiceStack.ServiceInterface.Test</RootNamespace>
+
+    <AssemblyName>ServiceStack.ServiceInterface.Test</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,11 +1,10 @@
-using ServiceStack;
 using ServiceStack.ServiceInterface.Message;
 using ServiceStack.ServiceInterface.Message.Request;
 using ServiceStack.ServiceModel;
 using ServiceStack.ServiceModel.Message;
 using Xunit;
 
-namespace App.Test
+namespace ServiceStack.App.Test
 {
     public class IntegrationTests
     {

@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <RootNamespace>ServiceStack.ServiceInterface</RootNamespace>
+    <AssemblyName>ServiceStack.ServiceInterface</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
