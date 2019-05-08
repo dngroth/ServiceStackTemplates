@@ -1,4 +1,4 @@
-﻿namespace ServiceStack.ServiceInterface.Message.Request
+namespace ServiceStack.ServiceInterface.Message.Request
 {
     [Route("/messages/{Id}", "PUT")]
     public class UpdateMessage : IReturn<ServiceModel.Message.Message>

@@ -1,4 +1,4 @@
-﻿namespace ServiceStack.ServiceInterface
+namespace ServiceStack.ServiceInterface
 {
     public class ServiceInfo
     {

@@ -1,4 +1,4 @@
-﻿namespace ServiceStack.ServiceInterface.Message.Request
+namespace ServiceStack.ServiceInterface.Message.Request
 {
     [Route("/messages/{Id}", "DELETE")]
     public class DeleteMessage : IReturnVoid

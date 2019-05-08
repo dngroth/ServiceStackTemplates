@@ -1,4 +1,4 @@
-﻿using Funq;
+using Funq;
 using ServiceStack.ServiceInterface.Message;
 
 namespace ServiceStack.App.Test

@@ -1,4 +1,4 @@
-﻿using ServiceStack.ServiceInterface.Message.Request;
+using ServiceStack.ServiceInterface.Message.Request;
 using ServiceStack.ServiceModel;
 
 namespace ServiceStack.ServiceInterface.Message
