@@ -1,3 +1,4 @@
+ServiceStack.Kestrel.Core
 Microsoft.AspNetCore.Hosting
 Microsoft.AspNetCore.Server.Kestrel
 Microsoft.NET.Test.Sdk

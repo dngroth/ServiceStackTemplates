@@ -9,19 +9,5 @@
   <ItemGroup>
     <ProjectReference Include="..\ServiceInterface\ServiceInterface.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="ServiceStack">
-      <HintPath>..\..\..\..\..\..\Users\domin\.nuget\packages\servicestack.core\5.4.1\lib\netstandard2.0\ServiceStack.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Client">
-      <HintPath>..\..\..\..\..\..\Users\domin\.nuget\packages\servicestack.client.core\5.4.1\lib\netstandard2.0\ServiceStack.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Interfaces">
-      <HintPath>..\..\..\..\..\..\Users\domin\.nuget\packages\servicestack.interfaces.core\5.4.1\lib\netstandard2.0\ServiceStack.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Kestrel">
-      <HintPath>..\..\..\..\..\..\Users\domin\.nuget\packages\servicestack.kestrel.core\5.4.1\lib\netstandard2.0\ServiceStack.Kestrel.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
