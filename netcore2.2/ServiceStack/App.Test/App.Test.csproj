@@ -23,5 +23,5 @@
       <HintPath>..\..\..\..\..\..\Users\domin\.nuget\packages\servicestack.kestrel.core\5.4.1\lib\netstandard2.0\ServiceStack.Kestrel.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
+  <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
