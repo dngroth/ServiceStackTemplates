@@ -1,0 +1,15 @@
+Microsoft.AspNetCore
+Microsoft.AspNetCore.Diagnostics
+Microsoft.AspNetCore.Mvc
+Microsoft.AspNetCore.Routing
+Microsoft.AspNetCore.Server.IISIntegration
+Microsoft.AspNetCore.Server.Kestrel
+Microsoft.AspNetCore.StaticFiles
+Microsoft.Extensions.Configuration.EnvironmentVariables
+Microsoft.Extensions.Configuration.Json
+Microsoft.Extensions.Logging
+Microsoft.Extensions.Logging.Console
+Microsoft.Extensions.Logging.Debug
+Microsoft.Extensions.Options.ConfigurationExtensions
+Microsoft.VisualStudio.Web.BrowserLink
+ServiceStack.Core

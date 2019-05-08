@@ -1,17 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <RootNamespace>ServiceStack.ServiceInterface</RootNamespace>
     <AssemblyName>ServiceStack.ServiceInterface</AssemblyName>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="ServiceStack.Core" Version="5.*" />
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\ServiceModel\ServiceModel.csproj" />
   </ItemGroup>
-
+  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
 </Project>

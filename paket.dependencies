@@ -1,0 +1,22 @@
+source https://api.nuget.org/v3/index.json
+
+nuget Microsoft.AspNetCore >= 2.0
+nuget Microsoft.AspNetCore.Diagnostics >= 2.0
+nuget Microsoft.AspNetCore.Hosting 2.2.0
+nuget Microsoft.AspNetCore.Mvc >= 2.0
+nuget Microsoft.AspNetCore.Routing >= 2.0
+nuget Microsoft.AspNetCore.Server.IISIntegration >= 2.0
+nuget Microsoft.AspNetCore.Server.Kestrel 2.2.0
+nuget Microsoft.AspNetCore.StaticFiles >= 2.0
+nuget Microsoft.Extensions.Configuration.EnvironmentVariables >= 2.0
+nuget Microsoft.Extensions.Configuration.Json >= 2.0
+nuget Microsoft.Extensions.Logging >= 2.0
+nuget Microsoft.Extensions.Logging.Console >= 2.0
+nuget Microsoft.Extensions.Logging.Debug >= 2.0
+nuget Microsoft.Extensions.Options.ConfigurationExtensions >= 2.0
+nuget Microsoft.NET.Test.Sdk 15.9.0
+nuget Microsoft.VisualStudio.Web.BrowserLink >= 2.0
+nuget ServiceStack.Core >= 5.0
+nuget ServiceStack.Interfaces.Core >= 5.0
+nuget xunit 2.4.0
+nuget xunit.runner.visualstudio 2.4.0
